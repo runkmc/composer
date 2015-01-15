@@ -60,9 +60,21 @@ ul#footer {
   }
 }
 
-ul li ul li {
+#works-list {
+  padding-bottom:1.5em;
+
+  li {
   line-height:1.35em;
   padding-bottom:1.35em;
+  @media all and (min-width:1650px) {
+    line-height:1.5em;
+    padding-bottom:1.35em;
+    }
+  }
+}
+
+#works-list li:last-child {
+  padding-bottom:0;
 }
 
 #footer h2 {
@@ -92,10 +104,16 @@ header {
   @media all and (max-width:$break-small) {
     font-size:2em;
   }
+  @media all and (min-width:1650px) {
+    font-size:5.5em;
+  }
 }
 
 #footer li {
   line-height:1.35em;
+  @media all and (min-width:1650px) {
+    line-height:1.5em;
+  }
 }
 
 span.work-title {

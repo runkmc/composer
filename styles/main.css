@@ -129,9 +129,18 @@ ul#footer {
         width: 100%;
         margin-right: 1.5em; } }
 
-ul li ul li {
-  line-height: 1.35em;
-  padding-bottom: 1.35em; }
+#works-list {
+  padding-bottom: 1.5em; }
+  #works-list li {
+    line-height: 1.35em;
+    padding-bottom: 1.35em; }
+    @media all and (min-width: 1650px) {
+      #works-list li {
+        line-height: 1.5em;
+        padding-bottom: 1.35em; } }
+
+#works-list li:last-child {
+  padding-bottom: 0; }
 
 #footer h2 {
   padding-bottom: 1em; }
@@ -153,9 +162,15 @@ header {
   @media all and (max-width: 670px) {
     header {
       font-size: 2em; } }
+  @media all and (min-width: 1650px) {
+    header {
+      font-size: 5.5em; } }
 
 #footer li {
   line-height: 1.35em; }
+  @media all and (min-width: 1650px) {
+    #footer li {
+      line-height: 1.5em; } }
 
 span.work-title {
   font-style: italic; }
