@@ -164,7 +164,8 @@ header {
       font-size: 2em; } }
   @media all and (min-width: 1650px) {
     header {
-      font-size: 5.5em; } }
+      font-size: 5.5em;
+      padding-bottom: 1.5em; } }
 
 #footer li {
   line-height: 1.35em; }
