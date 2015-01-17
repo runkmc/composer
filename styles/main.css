@@ -179,6 +179,10 @@ span.work-title {
 body {
   background-color: #F9690E; }
 
+a {
+  color: white;
+  text-decoration: none; }
+
 header h1 {
   color: white; }
   header h1 span:last-child {
