@@ -177,7 +177,10 @@ span.work-title {
   font-style: italic; }
 
 a#return-home {
-  margin-bottom: 4em; }
+  margin-bottom: 8em; }
+  @media all and (max-width: 670px) {
+    a#return-home {
+      margin-bottom: 2em; } }
 
 body {
   background-color: #F9690E; }

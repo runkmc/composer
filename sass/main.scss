@@ -122,7 +122,11 @@ span.work-title {
 }
 
 a#return-home {
-  margin-bottom:4em;
+  margin-bottom:8em;
+
+  @media all and (max-width:$break-small) {
+    margin-bottom:2em;
+  }
 }
 
 // color
