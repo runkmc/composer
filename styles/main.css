@@ -129,17 +129,17 @@ ul#footer {
         width: 100%;
         margin-right: 1.5em; } }
 
-#works-list {
+.works-list {
   padding-bottom: 1.5em; }
-  #works-list li {
+  .works-list li {
     line-height: 1.35em;
     padding-bottom: 1.35em; }
     @media all and (min-width: 1650px) {
-      #works-list li {
+      .works-list li {
         line-height: 1.5em;
         padding-bottom: 1.35em; } }
 
-#works-list li:last-child {
+.works-list li:last-child {
   padding-bottom: 0; }
 
 #footer h2 {
