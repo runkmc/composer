@@ -121,6 +121,10 @@ span.work-title {
   font-style:italic;
 }
 
+a#return-home {
+  margin-bottom:4em;
+}
+
 // color
 
 body {
@@ -130,6 +134,11 @@ body {
 a {
   color:white;
   text-decoration:none;
+  @include transition(all 0.5s $ease-out-cubic);
+
+  &:hover {
+    color:black;
+  }
 }
 
 header h1 {

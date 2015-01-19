@@ -176,12 +176,20 @@ header {
 span.work-title {
   font-style: italic; }
 
+a#return-home {
+  margin-bottom: 4em; }
+
 body {
   background-color: #F9690E; }
 
 a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  a:hover {
+    color: black; }
 
 header h1 {
   color: white; }
