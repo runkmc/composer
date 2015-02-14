@@ -1,3 +1,81 @@
 @import "reset";
 @import "bourbon/bourbon";
 
+// {{{ Animations
+
+@include keyframes(titleFade) {
+  from { opacity:0; } to { opacity:1; }
+}
+
+body.index > header h1, body.index > header li {
+  opacity:0;
+  @include animation-name(titleFade);
+  @include animation-timing-function($ease-out-quad);
+  @include animation-fill-mode(forwards);
+  @include animation-duration(0.85s);
+}
+
+body.index > header h1 {
+  @include animation-delay(0.4s);
+}
+
+body.index > header ul li {
+  &:nth-child(1) {
+    @include animation-delay(1s);
+  }
+  &:nth-child(2) {
+    @include animation-delay(1.3s);
+  }
+  &:nth-child(3) {
+    @include animation-delay(1.6s);
+  }
+}
+
+// }}}
+
+// {{{ Global
+
+body {
+  width:35em;
+  margin:0 auto;
+  padding-top:30vh;
+}
+
+// }}}
+// {{{ Header
+
+body > header {
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(baseline);
+  padding-bottom:1em;
+
+  a {
+    text-decoration:none;
+    color:#5F5F5F;
+  }
+}
+
+header h1 {
+  font-size:2em;
+}
+
+header ul {
+  @include display(flex);
+  font-size:1.2em;
+  
+  li {
+    padding:0 0.4em;
+  }
+  
+  a {
+    color:#D91E18;
+
+    &:hover {
+      text-decoration:underline;
+    }
+  }
+}
+
+// }}}
+
