@@ -139,8 +139,7 @@ body {
   color: #5F5F5F;
   margin: 0 auto;
   padding: 30vh 1.4em 0 1.4em;
-  font-family: "garamond-premier-pro", serif;
-  font-weight: 500; }
+  font-family: "eb_garamond12_regular", serif; }
 
 body > header {
   display: -webkit-box;
@@ -181,7 +180,7 @@ body > header {
 header h1 {
   padding-bottom: 1em;
   font-size: 2em;
-  font-family: "garamond-premier-pro-subhead", serif; }
+  font-family: "eb_garamond12_regular", serif; }
   header h1 a {
     color: #5F5F5F; }
 
@@ -201,7 +200,7 @@ header ul {
     text-decoration: underline; }
 
 #current-page {
-  font-style: italic; }
+  font-family: "eb_garamond12_italic"; }
 
 section p {
   line-height: 1.42em; }
@@ -220,6 +219,17 @@ section li {
   padding-bottom: 0.5em; }
 
 .work-title {
-  font-style: italic; }
+  font-family: "eb_garamond12_italic"; }
+
+@font-face {
+  font-family: 'eb_garamond12_italic';
+  src: url("../fonts/ebgaramond12-italic-webfont.woff2") format("woff2"), url("../fonts/ebgaramond12-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'eb_garamond12_regular';
+  src: url("../fonts/ebgaramond12-regular-webfont.woff2") format("woff2"), url("../fonts/ebgaramond12-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=main.css.map */

@@ -64,8 +64,7 @@ body {
   color:#5F5F5F;
   margin:0 auto;
   padding:30vh 1.4em 0 1.4em;
-  font-family:"garamond-premier-pro", serif;
-  font-weight:500;
+  font-family:"eb_garamond12_regular", serif;
 }
 
 // }}}
@@ -85,7 +84,7 @@ body > header {
 header h1 {
   padding-bottom:1em;
   font-size:2em;
-  font-family:"garamond-premier-pro-subhead", serif;
+  font-family:"eb_garamond12_regular", serif;
 
   a {
     color:#5F5F5F;
@@ -95,19 +94,19 @@ header h1 {
 header ul {
   @include display(flex);
   font-size:1.2em;
-  
+
   li {
     padding:0 0.4em;
     padding-bottom:1em;
   }
-  
+
   a:hover { 
-      text-decoration:underline;
+    text-decoration:underline;
   }
 }
 
 #current-page {
-  font-style:italic;
+  font-family:"eb_garamond12_italic";
 }
 
 // }}}
@@ -141,7 +140,23 @@ section li {
 }
 
 .work-title {
-  font-style:italic;
+  font-family:"eb_garamond12_italic";
+}
+
+@font-face {
+  font-family: 'eb_garamond12_italic';
+  src: url('../fonts/ebgaramond12-italic-webfont.woff2') format('woff2'),
+  url('../fonts/ebgaramond12-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eb_garamond12_regular';
+  src: url('../fonts/ebgaramond12-regular-webfont.woff2') format('woff2'),
+  url('../fonts/ebgaramond12-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // }}}
